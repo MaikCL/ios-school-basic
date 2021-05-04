@@ -35,7 +35,7 @@ extension ItunesAPI: EndpointType {
             case .searchArtist(query: let query):
                 return "/search?term=\(query)&entity=musicArtist&attribute=artistTerm&media=music"
             case .lookupArtist(id: let id):
-                return "/lookup?amgArtistId=\(id)&entity=song&limit=5&sort=recent"
+                return "/lookup?amgArtistId=\(id)&entity=song&sort=recent"
         }
     }
 }
